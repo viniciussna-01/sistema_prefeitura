@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --surface: 250 250 250;
+  --surface-raised: 255 255 255;
+  --ink: 24 24 27;
+  --ink-muted: 82 82 91;
+  --ink-faint: 161 161 170;
+  --edge: 228 228 231;
+  --accent: 37 99 235;
+  --accent-soft: 219 234 254;
+}
+
+.dark {
+  --surface: 12 12 14;
+  --surface-raised: 24 24 27;
+  --ink: 244 244 245;
+  --ink-muted: 161 161 170;
+  --ink-faint: 113 113 122;
+  --edge: 39 39 42;
+  --accent: 96 165 250;
+  --accent-soft: 30 58 138;
+}
+
+body {
+  @apply bg-surface text-ink antialiased;
+}
